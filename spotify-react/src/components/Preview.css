@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #121212;
+    font-family: 'Montserrat', sans-serif;
+}
+.preview {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #ae2896, #509bf5);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.preview h6 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.preview p {
+    color: #1a1919;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.preview button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+       
+        display: none;
+    }
+
+    .spotify-playlists .list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sidebar .logo,
+    .sidebar .policies {
+        display: none;
+    }
+
+    .main-container {
+        margin-left: 0;
+        margin-bottom: 60px;
+    }
+
+    .topbar {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .spotify-playlists .list {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .preview {
+        display: none;
+    }
+
+        .footbar {
+            width: 100%;
+            height: 50px;
+            background-color: rgba(59, 58, 58, 0.4);
+            backdrop-filter: blur(5px);
+            border-top: 1px solid black;
+            position: fixed;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            bottom: 0;
+            z-index: 98;
+
+        }
+
+    .library {
+        width: 2rem;
+    }
+
+    .icon {
+        /* font-size:10px; */
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        z-index: 999;
+
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        margin-left: -150px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    .topbar button,
+    .preview button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .spotify-playlists .list .item h4,
+    .spotify-playlists .list .item p {
+        font-size: 12px;
+    }
+
+    .preview h6,
+    .preview p {
+        font-size: 10px;
+    }
+}
