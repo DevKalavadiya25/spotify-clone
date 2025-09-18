@@ -14,7 +14,7 @@ import DeepFocus from "../assets/images/DeepFocus.jpg";
 import Instrument from "../assets/images/instrument.png";
 import FocusFlow from "../assets/images/FocusFlow.jpg";
 import BeatsToThink from "../assets/images/BeatsToThingsto.png";
-import ReadingAdventure from "../assets/images/readingadventur.png";
+import ReadingAdventure from "../assets/images/ReadingAdventur.png";
 import Workday from "../assets/images/workday.png";
 import Mumbai from "../assets/images/mumbai.png";
 import Kolkata from "../assets/images/kolkata.png";
